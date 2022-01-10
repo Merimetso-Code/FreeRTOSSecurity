@@ -50,7 +50,6 @@ Your for loop should now look something like this
     counter = 0
     counter = counter - 1;
   }
-}
 ```
 Once you have down this compile project and download the project to the development board and reboot the development board.
 
