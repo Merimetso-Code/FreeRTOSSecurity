@@ -13,7 +13,7 @@ This training is geared towards offensive security researchers, penetration test
 * The ARM Core Architecture
 * Emulation of ARM Core and FreeRTOS
 * Interrupt Handling in FreeRTOS
-* [Exercise #1: Test communications with Development Board and the GCC Tool Chain for FreeRTOS]()
+* [Exercise #1: Test communications with Development Board and the Tool Chain for FreeRTOS]()
 * Q&A / Wrap-up Session 0
 
 ## Session 1
