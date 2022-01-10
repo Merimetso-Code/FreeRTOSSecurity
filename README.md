@@ -8,7 +8,7 @@ This training is geared towards offensive security researchers, penetration test
 * Software development models/methods for real-time applications
 * The FreeRTOS development tool chain for an ARM Core
 * A quick introduction to programming in C
-* [Exercise #0: Installing and Testing the GCC Tool Chain](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise0.md))
+* [Exercise #0: Installing and Testing the Tool Chain](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise0.md))
 * The FreeRTOS Architecture
 * The ARM Core Architecture
 * Emulation of ARM Core and FreeRTOS
