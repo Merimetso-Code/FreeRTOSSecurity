@@ -54,7 +54,7 @@ The development board that we are going to be using for this class is the NXP LP
 * https://www.nxp.com/design/development-boards/lpcxpresso-boards/lpcxpresso55s69-development-board:LPC55S69-EVK
 
 The following is an image of the MPC5748G Development board that we are going to use in this class
-![LPCXpresso55S69](LPCXpresso55S69.jpg)
+![LPCXpresso55S69](LPCXpresso55S69.jpeg)
 
 It is expected that all students have a laptop/computer running an up to date version of the Microsoft Windows 10 Operating System.
 
