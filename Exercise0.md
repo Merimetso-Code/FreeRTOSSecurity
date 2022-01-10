@@ -10,26 +10,51 @@ You may also want to download and access the Installation Guide and Release note
 For this exercise you can create the  project using one of the following two methods:
 
 * Run the MCUXpresso software and then using the following pull down menus create a project.
-  * ??????
-  * ?????
-  * [Exercise 0 - MCUXpresso Project]()
+  * File -> New -> Import SDK Examples -> Select LPCXpresso55S69
+  * RTOS_Examples -> FreeRTOS_Hello
 
-Please note that for the following project we are making use of the Z4_1 core. When you have installed the S32DS studio, then connect the MPC5748G Development Board to your laptop. Once you have executed the S32DS software and created/loaded the project, then can you edit the main function in the file hello_Z4_1.c. In the main function you should see the following:
+When you have installed the MCUXpresso Integrated Development Environment, then connect the LPCXpresso55S69 Development Board to your laptop. Once you have executed the MCUXpresso Integrated Development Environment software and created/loaded the project, then can you edit the main function in the file freertos_hello.c. In the main function you should see the following:
 ```c
 int main(void)
 {
-        return 0;
+    POWER_SetBodVbatLevel(kPOWER_BodVbatLevel1650mv, kPOWER_BodHystLevel50mv, false);
+    CLOCK_AttachClk(BOARD_DEBUG_UART_CLK_ATTACH);
+
+    BOARD_InitBootPins();
+    BOARD_InitBootClocks();
+    BOARD_InitDebugConsole();
+    if (xTaskCreate(hello_task, "Hello_task", configMINIMAL_STACK_SIZE + 100, NULL, hello_task_PRIORITY, NULL) !=
+      pdPASS)
+    {
+        PRINTF("Task creation failed!.\r\n");
+        while (1)
+            ;
+    }
+    vTaskStartScheduler();
+    for (;;)
+        ;
 }
 ```
-Now edit the while loop and replace it with an infinite for loop. Within that for-loop define an 32-bit integer and then:
+Within that for-loop define an 32-bit integer and then:
 * Sets the integer to zero;
 * Adds 32768 to it;
 * Sets it to zero again;
 * Subtract 1 from it.
 
+Your for loop should now look something like this
+```c
+  for (;;) {
+    int counter ;
+    counter = 0;
+    counter = counter + 32768;
+    counter = 0
+    counter = counter - 1;
+  }
+}
+```
 Once you have down this compile project and download the project to the development board and reboot the development board.
 
-# Advanced Exercise 2
+# Advanced Exercise 0
 
 Once you have compiled and downloaded the project onto the development board then use the debugger to step through the source code and execute it one command at a time. When debugging the software examine the variables and see how they change over time.
 
