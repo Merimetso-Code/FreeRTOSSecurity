@@ -7,10 +7,10 @@ In this exercise you are required to create two tasks where each task will obtai
 ```c
 //
 // For allocating memory from the heap.
-pvPortMalloc(MemeorySizeToBeAllocated)
+pvPortMalloc(MemeorySizeToBeAllocated);
 //
 //For de-allocating memory on the heap.
-pvPortFree()
+pvPortFree();
 ```
 You can create the project using the following method. Run the MCUXpresso software and then using the following pull down menus create a project.
 * File -> New -> Import SDK Examples -> Select LPCXpresso55S69
