@@ -1,6 +1,9 @@
 # Exercise 2 - Getting Tasks to communicate with each other and debugging communication task
 
-The goal of this exercise is to create, and then debug, a FreeRTOS application that makes use of two tasks communicating with each other.
+The goal of this exercise is to create, and then debug, a FreeRTOS application that makes use of two tasks communicating with each other via application of a queue. For that exercise you are required to create two tasks that use a shared queue to communicate. Each task is required to:
+* Read an integer from the queue
+* Check to see if the value of the integer is 4294967265.
+** If the value of 
 
 
 ```c
