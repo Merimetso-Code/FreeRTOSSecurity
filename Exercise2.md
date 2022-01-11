@@ -25,7 +25,10 @@ static void TaskTwo(void *pvParameters)
     }
 }
 ```
-To allow the two tasks to communicate you are going to need two queues. Remember that queues are uni-directional in nature, in that they allow information to flow in one direction.The first queue will allow for TaskOne to communicate with TaskTwo, and the second queue will allow for TaskTwo to communicate with TaskOne. We can use the following to create a queue that will contain data of type unit8_t.
+To allow the two tasks to communicate you are going to need two queues.
+
+
+A queue can hold a finite number of fixed size data items. The maximum number of items a queue can hold is called its ‘length’. Both the length and the size of each data item are set when the queue is created. Queues are normally used as First In First Out (FIFO) buffers, where data is written to the end (tail) of the queue and removed from the front (head) of the queue. Remember that queues are uni-directional in nature, in that they allow information to flow in one direction.The first queue will allow for TaskOne to communicate with TaskTwo, and the second queue will allow for TaskTwo to communicate with TaskOne. We can use the following to create a queue that will contain data of type unit8_t.
 ```c
 #define QUEUESIZE 10
 static QueueHandle_t CmdQueue1 = NULL;
