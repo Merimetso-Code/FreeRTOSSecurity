@@ -1,9 +1,6 @@
-# Exercise 0 - Test communications with Development Board and the Tool Chain for FreeRTOS
+# Exercise 1 - Test communications with Development Board and the Tool Chain for FreeRTOS
 
-The goal of this exercise is to test the communication with the board and your ability to use the Tool Chain to Debug a FreeRTOS Application.
-Build/Install your own firmware (using MCUXpresso Integrated Development Environment). The first stage of this is to download and install the MCUXpresso Integrated Development Environment. To achieve this please click on the following link and download and install the software. Please remember that when installing the MCUXpresso Integrated Development Environment software you will need to install the MCUXpresso Software Development Kit (SDK).
-
-For this exercise you can create the  project using one of the following two methods:
+The goal of this exercise is to test the communication with the board and your ability to use the Tool Chain to Debug a FreeRTOS Application. For this exercise you can create the project using the following method:
 
 * Run the MCUXpresso software and then using the following pull down menus create a project.
   * File -> New -> Import SDK Examples -> Select LPCXpresso55S69
