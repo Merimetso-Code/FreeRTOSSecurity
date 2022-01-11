@@ -59,6 +59,32 @@ Once you have created and compiled your application then you the debugger to val
 * Set a series of BreakPoints with the Two Task.
 * Examine the status of the variables and queues within the task to demonstrate that the applications functions as expected.
 
+# Advanced Exercise 3
+Once you have demonstrated that your applications works, then re-written the Application to use the following instead of a Mutex:
+* A binary semaphore
+* A counting semaphore (For this you will need to set the count value to one)
+
+We can create a use a binary semaphore using the following API function calls.
+```c
+// Create a Binary Semaphore
+SemaphoreHandle_t xBinarySemaphore;
+// Take a Binary Semaphore
+xSemaphoreTake( xBinarySemaphore, 0 );
+// Release/Grant a Binary Semaphore
+xSemaphoreGive(xBinarySemaphore);
+```
+
+We can create a use a normal semaphore using the following API function calls.
+```c
+SemaphoreHandle_t xSemaphore = NULL;
+xSemaphore = xSemaphoreCreateCount(/* MAX Count */ 1, /* Init Count */, 0);
+// Take a Counting Semaphore
+xSemaphoreTake( xSemaphore, timeDelay );
+// Release/Grant a Counting Semaphore
+xSemaphoreGive(xSemaphore);
+```
+
+
 # Tips and Hints
 Information and help on programming in FreeRTOS can be found on the following links:
 * [The FreeRTOS API and User Manuals](https://www.freertos.org/Documentation/RTOS_book.html)
