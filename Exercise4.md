@@ -6,8 +6,10 @@ The goal of this exercise is to create, and then debug, a FreeRTOS application t
 
 The heap is an area of dynamically-allocated memory that is managed automatically by the operating system or the memory manager library. In this exercise you are required to create two tasks where each task will obtain a glob of memory, write data to it, and then return it to the heap. The FreeRTOS API commands that you will use to allocate and de-allocate are as follows:
 ```c
+//
 // Define Block Size to be Allocated from Heap
 #define MemeorySizeToBeAllocated 10240
+//
 // For allocating memory from the heap.
 pvPortMalloc(MemeorySizeToBeAllocated);
 //
@@ -90,6 +92,9 @@ static void TaskOne(void *pvParameters)
 Once you have written the application and it successfully compiles then you can load and execute it on the LPCXpresso55S69 board, via the Debug button located on the Quick Start menu. You should then set a set of BreakPoints on the function bufferCopy, and explore the stack as the function is called and terminates.
 
 # Tips and Hints
+Information and help on programming in FreeRTOS can be found on the following links:
+* [The FreeRTOS API and User Manuals](https://www.freertos.org/Documentation/RTOS_book.html)
+
 Information and help on programming in C can be found on the following links:
 * [Programming in C](https://beginnersbook.com/2014/01/c-program-structure/)
 * [A C Tutorial](https://www.cprogramming.com/tutorial/c-tutorial.html?inl=nv)
