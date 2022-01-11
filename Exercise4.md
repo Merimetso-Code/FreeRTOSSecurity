@@ -2,7 +2,7 @@
 
 The goal of this exercise is to create, and then debug, a FreeRTOS application that makes use of Memory Management Constructs. The two memory management constructs that we are going to make use of are the Heap and the Stack. For the Heap we will explore how to obtain, and return memory to the heap. Then for the stack we will explore what a Buffer Overflow looks like.
 
-# Exploring the Heap
+## Exploring the Heap
 In this exercise you are required to create two tasks where each task will obtain a glob of memory, write data to it, and then return it to the heap. The FreeRTOS API commands that you will use to allocate and de-allocate are as follows:
 ```c
 //
@@ -26,6 +26,7 @@ Once you have created the project toy can then create two tasks. For each of the
 Once the application compiles, debug the application and explore the memory to see where the data is create/written. Also answer the following question:
 * When the data is De-allocate back to the heap is the data contain in the block erased or not, and what are the security implications?
 
+## Exploring the Stack
 
 # Tips and Hints
 Information and help on programming in C can be found on the following links:
