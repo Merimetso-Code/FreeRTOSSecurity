@@ -15,7 +15,7 @@ A buffer overflow is when too much data is written to a buffer on the stack and 
 // Define a function that copies the content of buffer1 to buffer2.
 int bufferCopy(char* buffer1, char* buffer2) {
   //
-  // Copy the contents of buffer1 to buffer2.
+  // Copy the content's of buffer1 to buffer2.
   return 0;
 }
 //
