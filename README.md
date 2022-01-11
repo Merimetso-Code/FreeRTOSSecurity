@@ -47,6 +47,13 @@ This training is geared towards offensive security researchers, penetration test
 * [Exercise #10: Source Code Reviews and Security Auditing]()
 * Q&A / Wrap-up Session 3
 
+## Reading List
+
+The following books are recommended in support of this course.
+* Brian Amos, Hands-On: RTOS with Microcontrollers, Packt, 2020.
+* Joseph Yiu, Definitive Guide To ARM Cortex M23 and Cortex M33 Processors, Newnes, 2021.
+* Al Kelley and Ira Pohl, Book on C, A: Programming in C, Addison-Wesley, 4th edition, 1998.
+
 ## Development Details
 
 The development board that we are going to be using for this class is the NXP LPCXpresso55S69 Development Board. Information about this board can be located at the following URL:
