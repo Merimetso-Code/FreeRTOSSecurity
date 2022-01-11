@@ -62,6 +62,8 @@ The algorithm for calculating a Fibonacci number is as follows:
 * calculateFibonacci(1) = 1
 * calculateFibonacci(n) = calculateFibonacci(n-1) + calculateFibonacci(n-2)
 
+Once you have written the application and it compiles then load and execute it on the LPCXpresso55S69 board via the Debug button located on the Quick Start menu. You should then set a set of BreakPoints on the function calculateFibonacci, and explore the stack each time the function is called. 
+
 # Tips and Hints
 Information and help on programming in C can be found on the following links:
 * [Programming in C](https://beginnersbook.com/2014/01/c-program-structure/)
