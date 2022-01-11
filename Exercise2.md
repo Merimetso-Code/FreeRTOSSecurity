@@ -3,9 +3,14 @@
 The goal of this exercise is to create, and then debug, a FreeRTOS application that makes use of two tasks communicating with each other via application of a queue. For that exercise you are required to create two tasks that use a shared queue to communicate. Each task is required to perform the following within an infinite loop.
 * Read an integer from the queue
 * Check to see if the value of the integer is 4294967265. If it is then to reset the value to zero.
-* To add one to the integer and then place it back in the queue
+* To add one to the integer and then place it back in the queue.
 
-We can use the following to create the two tasks:
+
+For this exercise you can create the project using the following method. Run the MCUXpresso software and then using the following pull down menus create a project.
+* File -> New -> Import SDK Examples -> Select LPCXpresso55S69
+* RTOS_Examples -> FreeRTOS_Hello
+
+Once you have created a new project you can edit the freertos_hello.c file to define the required two tasks and their required queues. We can use the following templates to create the two tasks:
 ```c
 // Definition of Task One
 static void TaskOne(void *pvParameters)
