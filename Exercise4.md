@@ -32,7 +32,7 @@ Once the application compiles, debug the application and explore the memory to s
 
 The stack is implemented as a LIFO list of frames. A frame is a way to localise information about subroutines. In general, a subroutine must have in its frame the return address (where to jump back to when the subroutine completes), the function's input parameters. When a subroutine is called, all this information is pushed onto the stack in a specific order. When the function returns, all these values on the stack are popped back off, reclaimed to the system for later use with a different function call. In addition, subroutines can also use the stack as storage for local variables.
 
-For this exercise you are required to create a program with one task, where the task execute a loop (from one to ten), to calculate the Fibonacci number. Each task should be structure as follows with a function.
+For this exercise you are required to create a program with one task, where the task execute a loop (from one to ten), to calculate the Fibonacci number. The task should be structure as follows with a function.
 ```c
 //
 // Define the function to calculate the Fibonacci number
@@ -62,7 +62,32 @@ The algorithm for calculating a Fibonacci number is as follows:
 * calculateFibonacci(1) = 1
 * calculateFibonacci(n) = calculateFibonacci(n-1) + calculateFibonacci(n-2)
 
-Once you have written the application and it compiles then load and execute it on the LPCXpresso55S69 board via the Debug button located on the Quick Start menu. You should then set a set of BreakPoints on the function calculateFibonacci, and explore the stack each time the function is called. 
+Once you have written the application and it compiles then load and execute it on the LPCXpresso55S69 board via the Debug button located on the Quick Start menu. You should then set a set of BreakPoints on the function calculateFibonacci, and explore the stack each time the function is called.
+
+## A Simple Buffer Overflow
+
+A buffer overflow is when too much data is written to a buffer on the stack and it overflows into other areas of the stack. So in this exercise we are going to create a function that copies the contents of one buffer to another. We will then invoke this function with a single task.  The task should be structure as follows with a function.
+
+```c
+//
+// Define a function that copies the content of buffer1 to buffer2.
+int bufferCopy(char* buffer1, char* buffer2) {
+  //
+  //
+  return 0;
+}
+//
+// Definition of Task One
+static void TaskOne(void *pvParameters)
+{
+  //
+  //
+  //
+  vTaskSuspend(NULL);
+}
+```
+
+Once you have written the application and it successfully compiles then you can load and execute it on the LPCXpresso55S69 board, via the Debug button located on the Quick Start menu. You should then set a set of BreakPoints on the function bufferCopy, and explore the stack as the function is called and terminates.
 
 # Tips and Hints
 Information and help on programming in C can be found on the following links:
