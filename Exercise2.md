@@ -39,9 +39,7 @@ Having create a queue we can use the following commands to place data on the que
 xQueueSend(CmdQueue,&command,portMAX_DELAY);
 //
 // The following will take data from the Queue
-if (xQueueRecieve(CmdQueue,&nextCmd,portMAX_DELAY)== pdTRUE) {
-	  // Process the data read from the queue
-	}
+xQueueRecieve(CmdQueue,&nextCmd,portMAX_DELAY)
 
 ```
 # Tips and Hints
