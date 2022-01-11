@@ -1,4 +1,4 @@
-# Exercise 4 - Using Memory Management constructs
+# Exercise 4 - Using Memory Management Constructs
 
 The goal of this exercise is to create, and then debug, a FreeRTOS application that makes use of Memory Management Constructs.
 
