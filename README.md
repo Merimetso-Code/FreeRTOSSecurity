@@ -31,7 +31,7 @@ This training is geared towards offensive security researchers, penetration test
 ## Session 2
 
 * JTAG and Debugging a FreeRTOS application with JTAG and GDB
-* [Exercise #6: Debugging a RTOS application using JTAG and GDB]
+* [Exercise #6: Debugging a RTOS application using JTAG and GDB]()
 * [Exercise #7: Using JTAG to dump the firmware]()
 * Reverse Engineering the RTOS firmware/application using static and dynamic techniques
 * [Exercises #8: Reverse Engineering a RTOS application and identify vulnerabilities]()
