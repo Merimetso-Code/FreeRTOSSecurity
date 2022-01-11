@@ -1,11 +1,13 @@
 # Exercise 4 - Using Memory Management Constructs
 
-The goal of this exercise is to create, and then debug, a FreeRTOS application that makes use of Memory Management Constructs. The two memory management constructs that we are going to make use of are the Heap and the Stack. For the Heap we will explore how to obtain, and return memory to the heap. Then for the stack we will explore what a Buffer Overflow looks like.
+The goal of this exercise is to create, and then debug, a FreeRTOS application that makes use of Memory Management Constructs. The two memory management constructs that we are going to make use of are the Heap and the Stack. For the Heap we will explore how to obtain, and return memory to the heap. Then for the stack we will explore how the stack is structured.
 
 ## Exploring the Heap
-In this exercise you are required to create two tasks where each task will obtain a glob of memory, write data to it, and then return it to the heap. The FreeRTOS API commands that you will use to allocate and de-allocate are as follows:
+
+The heap is an area of dynamically-allocated memory that is managed automatically by the operating system or the memory manager library. In this exercise you are required to create two tasks where each task will obtain a glob of memory, write data to it, and then return it to the heap. The FreeRTOS API commands that you will use to allocate and de-allocate are as follows:
 ```c
-//
+// Define Block Size to be Allocated from Heap
+#define MemeorySizeToBeAllocated 10240
 // For allocating memory from the heap.
 pvPortMalloc(MemeorySizeToBeAllocated);
 //
@@ -27,6 +29,38 @@ Once the application compiles, debug the application and explore the memory to s
 * When the data is De-allocate back to the heap is the data contain in the block erased or not, and what are the security implications?
 
 ## Exploring the Stack
+
+The stack is implemented as a LIFO list of frames. A frame is a way to localise information about subroutines. In general, a subroutine must have in its frame the return address (where to jump back to when the subroutine completes), the function's input parameters. When a subroutine is called, all this information is pushed onto the stack in a specific order. When the function returns, all these values on the stack are popped back off, reclaimed to the system for later use with a different function call. In addition, subroutines can also use the stack as storage for local variables.
+
+For this exercise you are required to create a program with one task, where the task execute a loop (from one to ten), to calculate the Fibonacci number. Each task should be structure as follows with a function.
+```c
+//
+// Define the function to calculate the Fibonacci number
+int calculateFibonacci() {
+  int result = 0;
+  // Calculate the Fibonacci number and place it in the variable result
+  return result;
+}
+//
+// Definition of Task One
+static void TaskOne(void *pvParameters)
+{
+  // Do Some Stuff
+  int x = 1;
+  iny y = 1;
+  while( x!= 11) {
+    y = calculateFibonacci(x);
+    x = x + 1;
+  }
+  // Suspend the Task.
+  vTaskSuspend(NULL);
+}
+```
+
+The algorithm for calculating a Fibonacci number is as follows:
+* calculateFibonacci(0) = 0
+* calculateFibonacci(1) = 1
+* calculateFibonacci(n) = calculateFibonacci(n-1) + calculateFibonacci(n-2)
 
 # Tips and Hints
 Information and help on programming in C can be found on the following links:
