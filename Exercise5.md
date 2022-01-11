@@ -39,7 +39,7 @@ static void TaskOne(void *pvParameters)
 Once you have written the application and it successfully compiles then you can load and execute it on the LPCXpresso55S69 board, via the Debug button located on the Quick Start menu. You should then set a set of BreakPoints on the function bufferCopy, and explore the stack as the function is called and terminates. The keys questions to consider are:
 * What happens when SizeOfBuffer1 is the same as SizeOfBuffer2 ?
 * What happens when SizeOfBuffer1 is the greater than SizeOfBuffer2 ?
-  * What does the loop like and have any key values been over written?
+  * What does the stack look like, and have any key values been over written?
 
 # Tips and Hints
 Information and help on programming in FreeRTOS can be found on the following links:
