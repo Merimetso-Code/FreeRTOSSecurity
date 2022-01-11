@@ -66,44 +66,6 @@ The algorithm for calculating a Fibonacci number is as follows:
 
 Once you have written the application and it compiles then load and execute it on the LPCXpresso55S69 board via the Debug button located on the Quick Start menu. You should then set a set of BreakPoints on the function calculateFibonacci, and explore the stack each time the function is called.
 
-## A Simple Buffer Overflow
-
-A buffer overflow is when too much data is written to a buffer on the stack and it overflows into other areas of the stack. So in this exercise we are going to create a function that copies the contents of one buffer to another. We will then invoke this function with a single task.  The task should be structure as follows with a function.
-
-```c
-//
-//
-#define SizeOfBuffer1 1024
-#define SizeOfBuffer2 1024
-//
-// Define a function that copies the content of buffer1 to buffer2.
-int bufferCopy(char* buffer1, char* buffer2) {
-  //
-  //
-  return 0;
-}
-//
-// Definition of Task One - Initialize Buffers and Invoke Function
-static void TaskOne(void *pvParameters)
-{
-  char BufferOne[SizeOfBuffer1];
-  char BufferTwo[SizeOfBuffer2];
-  //
-  // Initial BufferOne with the Letter A
-  //
-  //
-  // Initial BufferTwo with the Letter Z
-  //
-  bufferCopy(BufferOne, BufferTwo);
-  //
-  vTaskSuspend(NULL);
-}
-```
-
-Once you have written the application and it successfully compiles then you can load and execute it on the LPCXpresso55S69 board, via the Debug button located on the Quick Start menu. You should then set a set of BreakPoints on the function bufferCopy, and explore the stack as the function is called and terminates. The keys questions to consider are:
-* What happens when SizeOfBuffer1 is the same as SizeOfBuffer2 ?
-* What happens when SizeOfBuffer1 is the greater than SizeOfBuffer2 ?
-
 # Tips and Hints
 Information and help on programming in FreeRTOS can be found on the following links:
 * [The FreeRTOS API and User Manuals](https://www.freertos.org/Documentation/RTOS_book.html)
