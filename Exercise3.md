@@ -50,7 +50,7 @@ Remember that you will have to use the xTaskCreate(...) function to execute each
 ```c
 //
 // Take control of the Mutex
-xSemaphoreTake(mutexPtr, timeDelay)
+xSemaphoreTake(mutexPtr, timeDelay);
 //
 // Release control of the Mutex
 xSemaphoreGive(mutexPtr);
