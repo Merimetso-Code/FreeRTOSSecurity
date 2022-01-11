@@ -1,4 +1,4 @@
-# Exercise 4 - Identifying and Exploiting Stack and Heap Vulnerabilities in RTOS
+# Exercise 5 - Identifying and Exploiting Stack and Heap Vulnerabilities in RTOS
 
 The goal of this exercise is analyse a FreeRTOS application so as to  Identifying and Exploiting Stack and Heap Vulnerabilities in RTOS
 
