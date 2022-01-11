@@ -4,8 +4,9 @@ The goal of Exercise three is to create, and then debug, a FreeRTOS application 
 
 For this exercise you are required to create two tasks that use a single Mutex to share a local variable. Each task is required to perform the following within an infinite loop.
 * Obtain the Mutex.
-* Check to see if the value of the integer is 4294967265. If it is then to reset the value to zero.
-* To add one to the integer.
+* Check to see if the value of the integer is either 4294967265 or 4294967264. If it is then to reset the value to zero.
+* If Task One, then add one to the integer.
+* If Task Two, then add Two to the integer.
 * Release the Mutex.
 
 For this exercise you can create the project using the following method. Run the MCUXpresso software and then using the following pull down menus create a project.
