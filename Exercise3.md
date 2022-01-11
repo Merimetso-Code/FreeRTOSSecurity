@@ -32,13 +32,32 @@ static void TaskTwo(void *pvParameters)
     }
 }
 ```
-
+Once you have created the two tasks are you going to need to edit the main function to define the shate integer and the mutex used to control access to the Integer.
 
 ```c
-
+int main(void)
+{
+  // Do Stuff
+  SemaphoreHandle_t mutexPtr = NULL;
+  mutexPtr = xSemaphoreCreateMutex();
+  unit8_t command = 0;
+  unit8_t timeDelay = 200;
+  // Do More Stuff and execute the two tasks.
+}
 
 ```
-
+Remember that you will have to use the xTaskCreate(...) function to execute each of the two tasks. Having create a Mutex we can use the following commands to take, and release, control of the mutex.
+```c
+//
+// Take control of the Mutex
+xSemaphoreTake(mutexPtr, timeDelay)
+//
+// Release control of the Mutex
+xSemaphoreGive(mutexPtr);
+```
+Once you have created and compiled your application then you the debugger to validate that is works.
+* Set a series of BreakPoints with the Two Task.
+* Examine the status of the variables and queues within the task to demonstrate that the applications functions as expected.
 
 # Tips and Hints
 Information and help on programming in C can be found on the following links:
