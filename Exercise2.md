@@ -8,7 +8,7 @@ The goal of this exercise is to create, and then debug, a FreeRTOS application t
 We can use the following to create the two tasks:
 ```c
 // Definition of Task One
-static void taskOne(void *pvParameters)
+static void TaskOne(void *pvParameters)
 {
     for (;;)
     {
@@ -17,7 +17,7 @@ static void taskOne(void *pvParameters)
 }
 //
 // Definition of Task Two
-static void taskTwo(void *pvParameters)
+static void TaskTwo(void *pvParameters)
 {
     for (;;)
     {
@@ -25,7 +25,13 @@ static void taskTwo(void *pvParameters)
     }
 }
 ```
-
+To allow the two tasks to communicate you are going to need two queues. Remember that queues are uni-directional in nature, in that they allow information to flow in one direction.The first queue will allow for TaskOne to communicate with TaskTwo, and the second queue will allow for TaskTwo to communicate with TaskOne. We can use the following to create a queue that will contain data of type unit8_t.
+```c
+#define QUEUESIZE 10
+static QueueHandle_t CmdQueue1 = NULL;
+unit8_t command = 236;
+CmdQueue1 = xQueueCreate(QUEUESIZE, sizeof(uint8_t));
+```
 
 # Tips and Hints
 Information and help on programming in C can be found on the following links:
