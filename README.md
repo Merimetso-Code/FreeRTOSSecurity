@@ -50,9 +50,9 @@ This training is geared towards offensive security researchers, penetration test
 ## Reading List
 
 The following books are recommended in support of this course.
-* Brian Amos, Hands-On: RTOS with Microcontrollers, Packt, 2020.
-* Joseph Yiu, Definitive Guide To ARM Cortex M23 and Cortex M33 Processors, Newnes, 2021.
-* Al Kelley and Ira Pohl, Book on C, A: Programming in C, Addison-Wesley, 4th edition, 1998.
+* [Brian Amos, Hands-On: RTOS with Microcontrollers, Packt, 2020.](https://www.amazon.co.uk/Hands-RTOS-Microcontrollers-Building-real-time/dp/1838826734/ref=sr_1_1?crid=DMY4DPNC99Q3&keywords=Hands-On%3A+RTOS+with+Microcontrollers&qid=1641932971&s=books&sprefix=hands-on+rtos+with+microcontrollers%2Cstripbooks%2C71&sr=1-1)
+* [Joseph Yiu, Definitive Guide To ARM Cortex M23 and Cortex M33 Processors, Newnes, 2021.](https://www.amazon.co.uk/Definitive-Guide-Cortex-M23-Cortex-M33-Processors/dp/0128207353/ref=sr_1_1?crid=131I6HSLMH7PM&keywords=Definitive+Guide+To+ARM+Cortex+M23+and+Cortex+M33+Processors&qid=1641933007&s=books&sprefix=definitive+guide+to+arm+cortex+m23+and+cortex+m33+processors%2Cstripbooks%2C42&sr=1-1)
+* [Al Kelley and Ira Pohl, Book on C, A: Programming in C, Addison-Wesley, 4th edition, 1998.](https://www.amazon.co.uk/Book-C-Programming/dp/0201183994/ref=sr_1_4?crid=L8V3J4J6UHRT&keywords=Book+on+C%2C+A%3A+Programming+in+C&qid=1641933052&s=books&sprefix=book+on+c+a+programming+in+c%2Cstripbooks%2C46&sr=1-4)
 
 ## Development Details
 
