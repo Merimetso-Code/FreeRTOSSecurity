@@ -24,7 +24,7 @@ This training is geared towards offensive security researchers, penetration test
 * [Exercise #3: Using Inter-Task Communication using Mutexes and Semaphores](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise3.md)
 * Memory Management and Memory Protection
 * The STACK and the HEAP
-* [Exercise #4: Using Memory Management constructs](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise4.md)
+* [Exercise #4: Using Memory Management Constructs](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise4.md)
 * [Exercise #5: Identifying and Exploiting Stack and Heap Vulnerabilities in RTOS](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise5.md)
 * Q&A / Wrap-up Session 1
 
