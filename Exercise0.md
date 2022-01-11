@@ -7,7 +7,7 @@ The goal of this exercise is to Build/Install your own firmware (using MCUXpress
 
 You may also want to download and access the Installation Guide and Release notes associated with MCUXpresso Integrated Development Environment. These can be found using the above link. Once MCUXpresso Integrated Development Environment and the SDK have been installed then we can start to create out first firmware.
 
-For this exercise you can create the  project using one of the following two methods:
+For this exercise you can create the  project using the following method:
 
 * Run the MCUXpresso software and then using the following pull down menus create a project.
   * File -> New -> Import SDK Examples -> Select LPCXpresso55S69
