@@ -56,6 +56,10 @@ xQueueSend(CmdQueue,&command,portMAX_DELAY);
 xQueueRecieve(CmdQueue,&nextCmd,portMAX_DELAY)
 
 ```
+Once you have created and compiled your application then you the debugger to validate that is works.
+* Set a series of BreakPoints with the Two Task.
+* Examine the status of the variables and queues within the task to demonstrate that the applications functions as expected. 
+
 # Tips and Hints
 Information and help on programming in FreeRTOS can be found on the following links:
 * [The FreeRTOS API and User Manuals](https://www.freertos.org/Documentation/RTOS_book.html)
