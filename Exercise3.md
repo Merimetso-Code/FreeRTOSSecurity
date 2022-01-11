@@ -1,6 +1,37 @@
 # Exercise 3 - Using Inter-Task Communication using Mutexes and Semaphores
 
-The goal of this exercise is to create, and then debug, a FreeRTOS application that makes use of two tasks communicating with each other via the application of Mutexes and Semaphores.
+The goal of Exercise three is to create, and then debug, a FreeRTOS application that makes use of two tasks communicating with each other via the application of a Mutex. A Mutex is a special type of binary semaphore that is used to control access to a resource that is shared between two or more tasks.When used in a mutual exclusion scenario, the mutex can be thought of as a token that is associated with the resource being shared. For a task to access the resource legitimately, it must first successfully ‘take’ the token (be the token holder). When the token holder has finished with the resource, it must ‘give’ the token back. Only when the token has been returned can another task successfully take the token, and then safely access the same shared resource. A task is not permitted to access the shared resource unless it holds the token.
+
+For this exercise you are required to create two tasks that use a single Mutex to share a local variable. Each task is required to perform the following within an infinite loop.
+* Obtain the Mutex.
+* Check to see if the value of the integer is 4294967265. If it is then to reset the value to zero.
+* To add one to the integer.
+* Release the Mutex.
+
+For this exercise you can create the project using the following method. Run the MCUXpresso software and then using the following pull down menus create a project.
+* File -> New -> Import SDK Examples -> Select LPCXpresso55S69
+* RTOS_Examples -> FreeRTOS_Hello
+
+Once you have created a new project you can edit the freertos_hello.c file to define the required two tasks and their required queues. We can use the following templates to create the two tasks:
+```c
+// Definition of Task One
+static void TaskOne(void *pvParameters)
+{
+    for (;;)
+    {
+        // Do Some Stuff Here...
+    }
+}
+//
+// Definition of Task Two
+static void TaskTwo(void *pvParameters)
+{
+    for (;;)
+    {
+        // Do Some Stuff Here...
+    }
+}
+```
 
 
 ```c
