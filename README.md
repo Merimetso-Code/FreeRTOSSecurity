@@ -20,12 +20,12 @@ This training is geared towards offensive security researchers, penetration test
 * Task Management within FreeRTOS and Direct Task Communication
 * Task Scheduling, Context Switching and Multi-Tasking
 * Queues, Mutexes and Semaphores for Interface Task Communication
-* [Exercise #2: Getting Tasks to communicate with each other and debugging communication task]()
-* [Exercise #3: Using Inter-Task Communication using Mutexes and Semaphores]()
+* [Exercise #2: Getting Tasks to communicate with each other and debugging communication task](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise2.md)
+* [Exercise #3: Using Inter-Task Communication using Mutexes and Semaphores](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise3.md)
 * Memory Management and Memory Protection
 * The STACK and the HEAP
-* [Exercise #4: Using Memory Management constructs]()
-* [Exercise #5: Identifying and Exploiting Stack and Heap Vulnerabilities in RTOS]()
+* [Exercise #4: Using Memory Management constructs](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise4.md)
+* [Exercise #5: Identifying and Exploiting Stack and Heap Vulnerabilities in RTOS](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise5.md)
 * Q&A / Wrap-up Session 1
 
 ## Session 2
