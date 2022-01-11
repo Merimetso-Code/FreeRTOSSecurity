@@ -32,8 +32,21 @@ static QueueHandle_t CmdQueue1 = NULL;
 unit8_t command = 236;
 CmdQueue1 = xQueueCreate(QUEUESIZE, sizeof(uint8_t));
 ```
+Having create a queue we can use the following commands to place data on the queue and read data from the queue.
+```c
+//
+// The following will place data on the Queue
+xQueueSend(CmdQueue,&command,portMAX_DELAY);
+//
+// The following will take data from the Queue
+if (xQueueRecieve(CmdQueue,&nextCmd,portMAX_DELAY)== pdTRUE) {
+	  // Process the data read from the queue
+	}
 
+```
 # Tips and Hints
+Information and help on programming in FreeRTOS can be found on the following links:
+* [The FreeRTOS API and User Manuals](https://www.freertos.org/Documentation/RTOS_book.html)
 Information and help on programming in C can be found on the following links:
 * [Programming in C](https://beginnersbook.com/2014/01/c-program-structure/)
 * [A C Tutorial](https://www.cprogramming.com/tutorial/c-tutorial.html?inl=nv)
