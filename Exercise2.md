@@ -42,7 +42,7 @@ int main(void)
   static QueueHandle_t CmdQueue1 = NULL;
   unit8_t command = 236;
   CmdQueue1 = xQueueCreate(QUEUESIZE, sizeof(uint8_t));
-  // Do More Stuff
+  // Do More Stuff and execute the two tasks.
 }
 ```
 Remember that you will have to use the xTaskCreate(...) function to execute each of the two tasks.
