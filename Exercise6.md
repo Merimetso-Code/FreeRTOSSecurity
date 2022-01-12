@@ -73,6 +73,20 @@ One that you have halted the JJJ can you use the J-Link commands to step through
 
 You should now use these comments to explore the contents of the stack as defined by the ARM registers.
 
+## Using the GNU Debugger (GDB)
+
+To use the GNU debugger you will first need to install the [GNU ARM Tool Chain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) onto your laptop. You can check that this has been installed by the following:
+
+![GNU Tool Chain](GNU1.png)
+
+You can invoke the GNU Debugger by executing the following command.
+
+* C:\SysGCC\arm-eadi\bin
+
+To allow the GNU Debugger to connect to the LPCXpresso55S69 board you will need to execute the J-Link GDB Server.
+
+![GNU Tool Chain](GNU2.png)
+
 # Tips and Hints
 Information and help on programming in FreeRTOS can be found on the following links:
 * [The FreeRTOS API and User Manuals](https://www.freertos.org/Documentation/RTOS_book.html)
