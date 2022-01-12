@@ -1,6 +1,39 @@
 # Exercise 8 -  Reverse Engineering a RTOS Application and Identify Vulnerabilities
 
-The goal of this exercise is
+The goal of this exercise is perform reverse engineering on a FreeRTOS application.
+
+## A Simple Applications
+This exercise starts with the development of a simple FreeRTOS application. Your application should make use of a single task that makes use of two functions. These functions simply add two numbers to together and then times the result by two. So your application should be structures as follows:
+
+```c
+//
+// Define a function that displays a string.
+int display(char* str) {
+  printf("%s\n", str);
+  return 0;
+}
+//
+// Definition of Task One
+static void TaskOne(void *pvParameters)
+{
+  char HelloString[] = "Hello - this is a FreeRTOS Application"
+  while (TRUE) {
+    display((char *) HelloString);
+    }
+  }
+}
+```
+
+## A Simple Applications
+Once this file has been compiled then we can access via:
+
+* The Debug Directory located in the profile file structure. We are looking for a file ending axf.
+* You could compile the the file, uploaded it to the LPCXpresso55S69 board, and then using JTAG/SWD dump the memory contents of the LPCXpresso55S69 board.
+
+Should you wish not to build a application then you can download and reverse engineer the [attached file](Exercise-8)
+
+Either way once you have a copy of the file we can start to reverse engineering it. Key tools to examine are:
+*
 
 # Tips and Hints
 Information and help on programming in FreeRTOS can be found on the following links:
