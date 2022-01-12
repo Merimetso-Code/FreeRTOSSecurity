@@ -45,7 +45,9 @@ For this stage of the exercise the student is required to perform open source in
 
 Once the application has been uploaded to the board and the memory map identified, then the students are required to connect the HHH to their laptop and execute to the J-Link Commander Software. Once this software running and it has established an SWD interface to the board, then the following command can be executed at the command line dump the memory to a file.
 
-* savebin <filename>, <address>, <numberofbytes>
+```
+* J-Link> savebin <filename>, <address>, <numberofbytes>
+```
 
 # Tips and Hints
 Information and help on programming in FreeRTOS can be found on the following links:
