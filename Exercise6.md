@@ -87,6 +87,14 @@ To allow the GNU Debugger to connect to the LPCXpresso55S69 board you will need 
 
 ![GNU Tool Chain](GNU2.png)
 
+Once the J-Link GDB Server is up and running then you can execute the GNU debugger and access the LPCXpresso55S69 board via the following command:
+* target remote 127.0.0.1:2331
+
+![GNU GDB Debugger](GNU3.png)
+
+This command will allow the GNU debugger to connect to the J-Link GDB Server, and this the LPCXpresso55S69 board via the SWD interface. Once GNU debugger (GDB) is running them you can start to debug the software using standard GDB commands.
+
+
 # Tips and Hints
 Information and help on programming in FreeRTOS can be found on the following links:
 * [The FreeRTOS API and User Manuals](https://www.freertos.org/Documentation/RTOS_book.html)
