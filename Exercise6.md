@@ -94,6 +94,18 @@ Once the J-Link GDB Server is up and running then you can execute the GNU debugg
 
 This command will allow the GNU debugger to connect to the J-Link GDB Server, and this the LPCXpresso55S69 board via the SWD interface. Once GNU debugger (GDB) is running them you can start to debug the software using standard GDB commands.
 
+* b address - Puts a breakpoint at address
+* info break - list breakpoints
+* r - Runs the program until a breakpoint or error
+* c - Continues running the program until the next breakpoint or error
+* f - Runs until the current function is finished
+* s - Runs the next line of the program
+* bt - Prints a stack trace
+* info frame - examine current stack frame
+* x addr - examine memory at given address
+* q - Quits gdb
+
+Via the above commands you should examine the execution of the program and how the stack changes as the program invokes functions.
 
 # Tips and Hints
 Information and help on programming in FreeRTOS can be found on the following links:
