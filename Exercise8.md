@@ -30,10 +30,52 @@ Once this file has been compiled then we can access via:
 * The Debug Directory located in the profile file structure. We are looking for a file ending axf.
 * You could compile the the file, uploaded it to the LPCXpresso55S69 board, and then using JTAG/SWD dump the memory contents of the LPCXpresso55S69 board.
 
-Should you wish not to build a application then you can download and reverse engineer the [attached file](Exercise-8)
+Should you wish not to build an application, then you can download and reverse engineer the [attached file](Exercise-8). Either way once you have a copy of the file we can start to reverse engineering it. Key tools to examine are:
+* file
+* strings
+* readelf
+* objdump
+* radare2/cutter
 
-Either way once you have a copy of the file we can start to reverse engineering it. Key tools to examine are:
-*
+Using the file command we can identify the type as follows:
+```
+$ file Exercise-8
+Exercise-8: ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), statically linked, with debug_info, not stripped
+$
+```
+
+We could then use commands such as readelf to identify information such as the ELF header information.  
+
+```
+$ readelf -h Exercise-8
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x181
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          1248664 (bytes into file)
+  Flags:                             0x5000400, Version5 EABI, hard-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         3
+  Size of section headers:           40 (bytes)
+  Number of section headers:         29
+  Section header string table index: 28
+$
+```
+
+The students should use various reverse engineering tools to identify:
+* A List of the various strings that the application uses
+* A List of all function that the application uses
+* A complete disassemble of the application
+* The Control Flow Graph for the applications
 
 # Tips and Hints
 Information and help on programming in FreeRTOS can be found on the following links:
