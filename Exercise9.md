@@ -90,6 +90,9 @@ static void TaskTwo(void *pvParameters)
 }
 ```
 
+Once the students have created the application, then they should compile it and download onto the LPCXpresso55S69 board. Using the MCUXpresso debugger the students should check that the application is performing as expected.
+
+
 # Tips and Hints
 Information and help on programming in FreeRTOS can be found on the following links:
 * [The FreeRTOS API and User Manuals](https://www.freertos.org/Documentation/RTOS_book.html)
