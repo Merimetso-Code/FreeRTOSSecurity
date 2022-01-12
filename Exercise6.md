@@ -110,6 +110,7 @@ Via the above commands you should examine the execution of the program and how t
 # Tips and Hints
 Information and help on programming in FreeRTOS can be found on the following links:
 * [The FreeRTOS API and User Manuals](https://www.freertos.org/Documentation/RTOS_book.html)
+* [J-Link User Manual](https://www.segger.com/downloads/jlink/UM08001_JLink.pdf)
 
 Information and help on programming in C can be found on the following links:
 * [Programming in C](https://beginnersbook.com/2014/01/c-program-structure/)
