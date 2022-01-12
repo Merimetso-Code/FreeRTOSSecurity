@@ -1,6 +1,6 @@
-# Exercise 5 - Identifying and Exploiting Stack and Heap Vulnerabilities in RTOS
+# Exercise 5 - Identifying and Exploiting Stack Vulnerabilities in RTOS
 
-The goal of this exercise is create and analyse a FreeRTOS application so as to explore the implications of a buffer overflow.
+The goal of this exercise is create and analyse a FreeRTOS application so as to explore the implications of a buffer overflow. In this exercise will be create an application that copies data from one buffer to another. By varying the the amount of data that is copied we will explore the structure of the stack and examine what happens when two much data is copied from one buffer to another.
 
 ## A Simple Buffer Overflow
 
