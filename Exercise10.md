@@ -1,8 +1,5 @@
 # Exercise 8 -  Source Code Reviews and Security Auditing
 
-The goal of this exercise is
-
-
 # Tips and Hints
 Information and help on programming in FreeRTOS can be found on the following links:
 * [The FreeRTOS API and User Manuals](https://www.freertos.org/Documentation/RTOS_book.html)
