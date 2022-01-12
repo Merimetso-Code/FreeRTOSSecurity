@@ -65,7 +65,13 @@ These commands should produce the following:
 
 ![J-Link - CPU Halted](JLink2.png)
 
+One that you have halted the JJJ can you use the J-Link commands to step through the execution of the code, and examine memory content, set breakpoints.
+* step - Execute steps in the CPU
+* mem - Examine memory content
+* setbp - Set a break point
+* go - continue execution on the Computer
 
+You should now use these comments to explore the contents of the stack as defined by the ARM registers.
 
 # Tips and Hints
 Information and help on programming in FreeRTOS can be found on the following links:
