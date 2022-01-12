@@ -1,7 +1,16 @@
 # Exercise 6 - Debugging a RTOS Application using JTAG and GDB
 
-The goal of this exercise is .
+The goal of this exercise is to make use of JTAG as a remote debugging tool. So in this exercise we are going to create a simple application and then use JTAG as to debug and analyse that application. To perform this exercise you are going to need the following:
 
+* [LPCXpresso55S69 Development Board](https://www.nxp.com/design/development-boards/lpcxpresso-boards/lpcxpresso55s69-development-board:LPC55S69-EVK).
+* [The Segger J-Link Adapter](https://www.segger.com/products/debug-probes/j-link/models/j-link-edu/).
+* [A Cortex JTAG Connector](https://www.segger.com/products/debug-probes/j-link/accessories/adapters/9-pin-cortex-m-adapter/).
+
+You will also need to download and install the [J-Link](https://www.segger.com/downloads/jlink/) software on your laptop.
+
+## A Simple Applications
+
+## Using J-Link 
 
 # Tips and Hints
 Information and help on programming in FreeRTOS can be found on the following links:
