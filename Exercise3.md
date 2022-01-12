@@ -60,7 +60,7 @@ Once you have created and compiled your application then you the debugger to val
 * Set a series of BreakPoints with the Two Task.
 * Examine the status of the variables and queues within the task to demonstrate that the applications functions as expected.
 
-# Advanced Exercise 3
+##  Advanced Exercise 3
 Once you have demonstrated that your applications works, then re-written your Application to use the following instead of a Mutex:
 * A binary semaphore
 * A counting semaphore (For this you will need to set the count value to one)

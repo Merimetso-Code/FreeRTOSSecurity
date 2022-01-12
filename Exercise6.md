@@ -1,10 +1,11 @@
-# Exercise 6 - Debugging a RTOS Application using JTAG and GDB
+# Exercise 6 - Debugging a RTOS Application using JTAG(SWD) and GDB
 
 The goal of this exercise is to make use of JTAG as a remote debugging tool. So in this exercise we are going to create a simple application and then use JTAG as to debug and analyse that application. To perform this exercise you are going to need the following:
 
 * [LPCXpresso55S69 Development Board](https://www.nxp.com/design/development-boards/lpcxpresso-boards/lpcxpresso55s69-development-board:LPC55S69-EVK).
 * [The Segger J-Link Adapter](https://www.segger.com/products/debug-probes/j-link/models/j-link-edu/).
 * [A Cortex JTAG Connector](https://www.segger.com/products/debug-probes/j-link/accessories/adapters/9-pin-cortex-m-adapter/).
+* [The GCC ARM Core Tool Chain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
 
 You will also need to download and install the [J-Link](https://www.segger.com/downloads/jlink/) software on your laptop.
 
@@ -41,12 +42,30 @@ static void TaskOne(void *pvParameters)
 }
 ```
 
-Once you have created the FreeRTOS application, then download, and execute, it onto the LPCXpresso55S69 board.
+Once you have created the FreeRTOS application, then download, and execute, it onto the LPCXpresso55S69 board using the GUI Flash tool located on the MCUXpresso tool bar.
 
 ## Using J-Link
 
-Using the Cortex JTAG Connector connect the Segger J-Link Adapter to the LPCXpresso55S69 board, and then connect the Segger J-Link Adapter to your laptop. Once you have done this you can then execute the J-Link software. The Cortex JTAG Connector connect to P7 on the LPCXpresso55S69 board. A pin out description of the LPCXpresso55S69 board is given in the following diagram.
+Using the Cortex JTAG Connector connect the Segger J-Link Adapter to the LPCXpresso55S69 board, and then connect the Segger J-Link Adapter to your laptop. Once you have done this you can then execute the J-Link software. The Cortex JTAG Connector connect to P7 on the LPCXpresso55S69 board. A pin out description of the LPCXpresso55S69 board is given in the following diagram. If you are using the J-Link mini then you should be able to connect the J-Link mini directly to the LPCXpresso55S69 board. Please note that when connecting and executing the J-Link software you will be using SWD as the JTAG interface for the LPCXpresso55S69. SWD is ARM's implementation (and extension) of the JTAG standard.
+
 ![LPCXpresso55S69](LPCXpresso55S69-Pins.png)
+
+Once the J-Link software is running you will need to select the device and as follows:
+* LPC55S69_M33_0 (1 Core)/(Flash Size 631.5KB + 631.5K)
+
+One you have select the default option for SWD with J-Link and select the correct LPC55S69_M33_0 core then J-Link should connect and give you the following:
+
+![J-Link - Set Up Complete](JLink1/png)
+
+Once the set up is complete that you can halt the CPU and examine the registers using the following commands:
+* halt
+* regs
+
+These commands should produce the following:
+
+![J-Link - CPU Halted](JLink1/png)
+
+
 
 # Tips and Hints
 Information and help on programming in FreeRTOS can be found on the following links:
