@@ -25,16 +25,16 @@ This training is geared towards offensive security researchers, penetration test
 * Memory Management and Memory Protection
 * The STACK and the HEAP
 * [Exercise #4: Using Memory Management Constructs](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise4.md)
-* [Exercise #5: Identifying and Exploiting Stack and Heap Vulnerabilities in RTOS](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise5.md)
+* [Exercise #5: Identifying and Exploiting Stack Vulnerabilities in RTOS](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise5.md)
 * Q&A / Wrap-up Session 1
 
 ## Session 2
 
 * JTAG and Debugging a FreeRTOS application with JTAG and GDB
-* [Exercise #6: Debugging a RTOS application using JTAG and GDB]()
-* [Exercise #7: Using JTAG to dump the firmware]()
+* [Exercise #6: Debugging a RTOS application using JTAG and GDB](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise6.md)
+* [Exercise #7: Using JTAG to dump the firmware](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise7.md)
 * Reverse Engineering the RTOS firmware/application using static and dynamic techniques
-* [Exercises #8: Reverse Engineering a RTOS application and identify vulnerabilities]()
+* [Exercises #8: Reverse engineering a RTOS application and identify vulnerabilities](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise8.md)
 * Q&A / Wrap-up Session 2
 
 ## Session 3
