@@ -41,10 +41,10 @@ This training is geared towards offensive security researchers, penetration test
 
 * Communicating with the Outside World (GPIO, Ethernet, etc)
 * FreeRTOS and the Cloud (AWS)
-* [Exercises #9: Building an FreeRTOS Application]()
+* [Exercises #9: Building an FreeRTOS Application](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise9.md)
 * Bring it all together and building an Application
 * Source Code Reviews and Security Auditing
-* [Exercise #10: Source Code Reviews and Security Auditing]()
+* [Exercise #10: Source Code Reviews and Security Auditing](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise10.md)
 * Q&A / Wrap-up Session 3
 
 ## Reading List
