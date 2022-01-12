@@ -10,7 +10,7 @@ The goal of this exercise is to make use of JTAG as a remote debugging tool. So 
 You will also need to download and install the [J-Link](https://www.segger.com/downloads/jlink/) software on your laptop.
 
 ## A Simple Applications
-This exercise starts withe the development of a simple FreeRTOS application. Your application should make use of a single task that makes use of two functions. These functions simply add two numbers to together and then times the result by two. So your application should be structures as follows:
+This exercise starts with the development of a simple FreeRTOS application. Your application should make use of a single task that makes use of two functions. These functions simply add two numbers to together and then times the result by two. So your application should be structures as follows:
 
 ```c
 //

@@ -40,10 +40,12 @@ static void TaskOne(void *pvParameters)
 For this stage of the exercise the student is required to perform open source intelligence (OSI) on the LPCXpresso55S69 board to identify the memory for the device. As a starting point the students may find the following a useful starting point.
 
 * [LPC55S69 Design Documentation](https://www.nxp.com/design/development-boards/lpcxpresso-boards/lpcxpresso55s69-development-board:LPC55S69-EVK)
+* Extra Hint - Look at the output of the GUI Flash Tool in the MCUXpresso IDE
 
 ## Using JTAG/SWD to Dump to a File
 
-Once the application has been uploaded to the board and the memory map identified, then the students are required to connect the HHH to their laptop and execute to the J-Link Commander Software. Once this software running and it has established an SWD interface to the board, then the following command can be executed at the command line dump the memory to a file.
+Once the application has been uploaded to the board and the memory map identified, then the students are required to connect the HHH to their laptop and execute to the J-Link Commander Software. Once this software running and it has established an SWD interface to the board, then the following command can be executed at the command line dump the memory to a file. You will also need to download and install the [J-Link](https://www.segger.com/downloads/jlink/) software on your laptop.
+
 
 ```
 * J-Link> savebin <filename>, <address>, <numberofbytes>

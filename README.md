@@ -30,9 +30,9 @@ This training is geared towards offensive security researchers, penetration test
 
 ## Session 2
 
-* JTAG and Debugging a FreeRTOS application with JTAG and GDB
+* JTAG/SWD and Debugging a FreeRTOS application with JTAG/SWD and GDB
 * [Exercise #6: Debugging a RTOS application using JTAG(SWD) and GDB](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise6.md)
-* [Exercise #7: Using JTAG to dump the firmware](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise7.md)
+* [Exercise #7: Using JTAG/SWD to dump the firmware](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise7.md)
 * Reverse Engineering the RTOS firmware/application using static and dynamic techniques
 * [Exercises #8: Reverse engineering a RTOS application and identify vulnerabilities](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Exercise8.md)
 * Q&A / Wrap-up Session 2
