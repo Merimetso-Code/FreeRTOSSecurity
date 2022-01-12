@@ -63,7 +63,7 @@ Once the set up is complete that you can halt the CPU and examine the registers 
 
 These commands should produce the following:
 
-![J-Link - CPU Halted](JLink1.png)
+![J-Link - CPU Halted](JLink2.png)
 
 
 
