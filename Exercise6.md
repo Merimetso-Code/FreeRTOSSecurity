@@ -55,7 +55,7 @@ Once the J-Link software is running you will need to select the device and as fo
 
 One you have select the default option for SWD with J-Link and select the correct LPC55S69_M33_0 core then J-Link should connect and give you the following:
 
-![J-Link - Set Up Complete](JLink1/png)
+![J-Link - Set Up Complete](JLink1.png)
 
 Once the set up is complete that you can halt the CPU and examine the registers using the following commands:
 * halt
@@ -63,7 +63,7 @@ Once the set up is complete that you can halt the CPU and examine the registers 
 
 These commands should produce the following:
 
-![J-Link - CPU Halted](JLink1/png)
+![J-Link - CPU Halted](JLink1.png)
 
 
 
