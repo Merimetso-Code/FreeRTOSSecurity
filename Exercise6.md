@@ -9,8 +9,41 @@ The goal of this exercise is to make use of JTAG as a remote debugging tool. So 
 You will also need to download and install the [J-Link](https://www.segger.com/downloads/jlink/) software on your laptop.
 
 ## A Simple Applications
+This exercise starts withe the development of a simple FreeRTOS application. Your application should make use of a single task that makes use of two functions. These functions simply add two numbers to together and then times the result by two. So your application should be structures as follows:
 
-## Using J-Link 
+```c
+//
+// Define a function that add two numbers together.
+int addition(int a, int b) {
+  int result = 0;
+  // result equals a plus  b
+  return result;
+}
+//
+// Define a function that multiples a number by two.
+int multiples(int a) {
+  int result = 0;
+  // result equals a times 2
+  return result;
+}
+//
+// Definition of Task One
+static void TaskOne(void *pvParameters)
+{
+  int result = 0;
+  int counter = 0;
+  while (TRUE) {
+    for(counter, counter > 1024, counter++) {
+      // result equals addition( counter , counter )
+      // result equals multiples( counter )
+    }
+  }
+}
+```
+
+Once you have created the FreeRTOS application, then download, and execute, it onto the LPCXpresso55S69 board.
+
+## Using J-Link
 
 # Tips and Hints
 Information and help on programming in FreeRTOS can be found on the following links:
