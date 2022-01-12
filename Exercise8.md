@@ -1,6 +1,6 @@
 # Exercise 8 -  Reverse Engineering a RTOS Application and Identify Vulnerabilities
 
-The goal of this exercise is perform reverse engineering on a FreeRTOS application.
+The goal of this exercise is perform reverse engineering on a FreeRTOS application. Within this exercise we will develop a simple application and then use various static reverse engineering techniques to identify what the applications does and how it functions. The goal of the reverse engineering exercise is to produce a complete function specification of the application.
 
 ## A Simple Applications
 This exercise starts with the development of a simple FreeRTOS application. Your application should make use of a single task that makes use of two functions. These functions simply add two numbers to together and then times the result by two. So your application should be structures as follows:
