@@ -45,6 +45,9 @@ Once you have created the FreeRTOS application, then download, and execute, it o
 
 ## Using J-Link
 
+Using the Cortex JTAG Connector connect the Segger J-Link Adapter to the LPCXpresso55S69 board, and then connect the Segger J-Link Adapter to your laptop. Once you have done this you can then execute the J-Link software. The Cortex JTAG Connector connect to P7 on the LPCXpresso55S69 board. A pin out description of the LPCXpresso55S69 board is given in the following diagram.
+![LPCXpresso55S69](LPCXpresso55S69-Pins.png)
+
 # Tips and Hints
 Information and help on programming in FreeRTOS can be found on the following links:
 * [The FreeRTOS API and User Manuals](https://www.freertos.org/Documentation/RTOS_book.html)
