@@ -3,10 +3,10 @@
 # Conduct an automated Code Review
 
 * Download SonarQube Community
-** https://www.sonarqube.org/success-download-community-edition/
+  * https://www.sonarqube.org/success-download-community-edition/
 
 * Download SonarScanner
-** https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/
+  * https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/
 
 # Conduct a manual source code review
 * Using Grep
