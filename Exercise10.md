@@ -1,13 +1,24 @@
 # Exercise 8 -  Source Code Reviews and Security Auditing
 
-# Tips and Hints
-Information and help on programming in FreeRTOS can be found on the following links:
-* [The FreeRTOS API and User Manuals](https://www.freertos.org/Documentation/RTOS_book.html)
+# Conduct an automated Code Review
 
-Information and help on programming in C can be found on the following links:
-* [Programming in C](https://beginnersbook.com/2014/01/c-program-structure/)
-* [A C Tutorial](https://www.cprogramming.com/tutorial/c-tutorial.html?inl=nv)
-* [Loops in C](https://www.tutorialspoint.com/cprogramming/c_loops.htm)
+* Download SonarQube Community
+* https://www.sonarqube.org/success-download-community-edition/
+
+
+
+* Download SonarScanner
+* https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/
+
+# Conduct a manual source code review
+* Using Grep
+
+grep -rnm './' -e 'search term'
+
+# Produce a threat model against security control
+* Threat-Model-1.jpg
+* Threat-Model-Table.docx
+
 
 ## Contact Details
 
