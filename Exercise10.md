@@ -10,13 +10,12 @@
 
 # Conduct a manual source code review
 * Using Grep
-
+```
 grep -rnm './' -e 'search term'
-
+```
 # Produce a threat model against security control
-* Threat-Model-1.jpg
-* Threat-Model-Table.docx
-
+* [Threat-Model-1](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Threat-Model-1.jpg)
+* [Threat-Model-Table](https://github.com/Merimetso-Code/FreeRTOSSecurity/blob/main/Threat-Model-Table.docx)
 
 ## Contact Details
 
